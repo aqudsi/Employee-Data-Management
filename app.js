@@ -50,8 +50,16 @@ $("#btn-submit").on("click", function(event){
 console.log(employeeName, startYear, salary);
 
 
-$("#employee-table").append("<tr><td>" + "<strong>Name:</strong> " + employeeName + 
-	"</td>" + "<td>" + "<strong>Role:</strong> " + role + "</td>" + "<td>" + "<strong>Start Date:</strong> " 
-	+ startYear + "</td>" + "<td>" + "<strong>Salary:</strong> " + salary + 
-	"</td>" + "<td>" + "<strong>Total earnings:</strong> " + totalSalary + "</td></tr>");
+
+$(".table").append("<tr><td>" + employeeName + "</td><td>" + role + "</td><td>" + 
+	startYear + "</td><td>" + salary + "</td><td>" + totalSalary + "</td></tr>")
+
+
 });
+
+
+
+
+
+
+
