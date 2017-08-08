@@ -1,0 +1,19 @@
+.panel-body a {
+      word-break: break-all;
+    }
+
+td {
+padding-left: 100px;
+}
+
+#name {
+	text-align: left;
+}
+
+#year {
+	text-align: center;
+}
+
+#money{
+	text-align: right;
+}

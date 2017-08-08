@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Employee</title>
+  <!-- Bootswatch Styling for Improving the Aesthetics -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Style to fix the issue of text extending past panel length -->
+ <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+
+  <!-- Main Bootstrap Search -->
+  <div class="container">
+
+    <!-- Jumbotron for Title -->
+    <div class="jumbotron" style="background-color: #20315A ; color: white;">
+      <h1 class="text-center"><strong></i>Employee Data Management</strong><br><small style="font-size: 30%;">A Comprehensive Directory of Employee Billable Hours</small></h1>
+    </div>
+
+     <!-- This row will handle all of the retrieved articles -->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+
+        <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
+        <div class="panel panel-primary">
+
+          <!-- Panel Heading for the retrieved articles box -->
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong><i class="fa fa-table"></i>  Current Employees </strong></h3>
+          </div>
+          
+          <div class="panel-body" id="employee-table">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row for Searching New York Times -->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+        <!-- First panel is for handling the search parameters -->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong><i class="fa  fa-list-alt"></i>  Add Employee</strong></h3>
+          </div>
+          <div class="panel-body">
+
+            <!-- Here we create an HTML Form for handling the inputs-->
+            <form role="form">
+
+              <!-- Here we create the text box for capturing the search term-->
+              <div class="form-group">
+                <label for="search">Employee Name:</label>
+                <input type="text" class="form-control" id="employee-name">
+              </div>
+
+              <div class="form-group">
+                <label for="search">Role:</label>
+                <input type="text" class="form-control" id="role">
+              </div>
+
+              <!-- Here we capture the Start Year Parameter-->
+              <div class="form-group">
+                <label for="start-year">Start Year:</label>
+                <input type="text" class="form-control" id="start-year">
+              </div>
+
+              <!-- Here we capture the End Year Parameter -->
+              <div class="form-group">
+                <label for="end-year">Monthly Rate:</label>
+                <input type="text" class="form-control" id="salary">
+              </div>
+
+              <!-- Here we have our final submit button -->
+              <button type="submit" class="btn btn-default" id="btn-submit"> Submit</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Footer Region -->
+    <div class="row">
+      <div class="col-sm-12">
+
+        <!-- Line Break followed by closing -->
+        <hr>
+        <h5 class="text-center"><small>Made by Ahmer and Dain</small></h5>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- jQuery JS -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- Code to the JavaScript File -->
+  <script src="assets/app.js"></script>
+
+</body>
+
+</html>
